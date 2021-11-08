@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+
+}
+
+header {
+    height: 960px;
+    background-image: url(/img/house.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 100%;
+}
+
+
+header span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #0F4898;
+}
+
+header .logo-white {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: white;
+}
+
+.first-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+nav { 
+    margin-left: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+nav a:not(:last-child) {
+    margin-right: 20px;
+}
+
+header .e-mail {
+    margin-top: 5px;
+}
+
+.number, .e-mail{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    display: block;
+}
+
+.contacts-header { 
+    margin-left: 200px;
+}
+
+.projects {
+    background-color: #F4F4F4;
+    padding-top: 100px;
+}
+
+.specification {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: black;
+    padding: 30px 40px 46px 40px;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.heading-projects {
+    margin-right: 400px;
+}
+
+.title-projects {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.description-projects {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
