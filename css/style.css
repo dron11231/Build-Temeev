@@ -67,7 +67,9 @@ header .e-mail {
 
 .projects {
     background-color: #F4F4F4;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    width: 865px;
 }
 
 .specification {
@@ -75,24 +77,83 @@ header .e-mail {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     color: black;
-    padding: 30px 40px 46px 40px;
+    padding: 25px 35px 35px 35px;
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-left: 350px;
+    position: relative;
+    z-index: 1;
 }
 
-.heading-projects {
-    margin-right: 400px;
+.heading {
+    margin-left: 350px;
 }
 
-.title-projects {
+.title {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: bold;
     margin: 0;
 }
 
-.description-projects {
+.description {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin-top: 20px;
+}
+
+
+.exx {
+    position: absolute;
+    top: 1020px;
+    right: 465px;
+    
+}
+
+.buttons {
+    position: absolute;
+    top: 1350px;
+    left: 350px;
+}
+
+.far {
+    font-size: 32px;
+    color: #585858;
+}
+
+.far:last-of-type {
+    margin-left: 3px;
+}
+
+.far:hover {
+    color: #0F4898;
+}
+
+.our-people {
+    margin-top: 50px;
+}
+
+.people-cards {
+    display: flex;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+
+.card:not(:last-child) {
+    margin-right: 20px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card span {
+    display: block;
+}
+
+.person-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
 }
