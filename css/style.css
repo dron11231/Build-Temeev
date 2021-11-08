@@ -9,6 +9,29 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 100%;
+    
+}
+
+/*header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 0;
+  }*/
+
+nav button {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-left: 50px;
 }
 
 
@@ -33,6 +56,8 @@ header .logo-white {
     border-bottom: 1px solid white;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 nav { 
@@ -62,7 +87,8 @@ header .e-mail {
 }
 
 .contacts-header { 
-    margin-left: 200px;
+    margin-left: 100px;
+    text-align: left;
 }
 
 .projects {
@@ -85,7 +111,7 @@ header .e-mail {
     z-index: 1;
 }
 
-.heading {
+.heading-projects {
     margin-left: 350px;
 }
 
@@ -95,6 +121,8 @@ header .e-mail {
     font-weight: bold;
     margin: 0;
 }
+
+
 
 .description {
     display: block;
@@ -132,28 +160,56 @@ header .e-mail {
 
 .our-people {
     margin-top: 50px;
+    text-align: center;
 }
+
+
 
 .people-cards {
     display: flex;
-    margin-left: 350px;
     margin-top: 40px;
+    justify-content: center;
+    
 }
 
 .card:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .card {
     text-align: center;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .card span {
     display: block;
 }
 
+.card img {
+    width: 200px;
+    height: 143px;
+    object-fit: cover;
+}
+
 .person-name {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
+}
+
+.work-exp {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: #2F2C23;
+    margin-top: 5px;
+}
+
+.person-description {
+    width: 200px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
 }
