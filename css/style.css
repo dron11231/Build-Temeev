@@ -1,6 +1,9 @@
 body {
     margin: 0;
+}
 
+.no-scroll {
+    overflow: hidden;
 }
 
 header {
@@ -32,10 +35,11 @@ nav button {
     border-radius: 50px;
     padding: 10px 30px;
     margin-left: 50px;
+
 }
 
 
-header span {
+.all {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 900;
@@ -98,6 +102,7 @@ header .e-mail {
     width: 865px;
 }
 
+
 .specification {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -109,6 +114,9 @@ header .e-mail {
     margin-left: 350px;
     position: relative;
     z-index: 1;
+
+    animation-name: test;
+    animation-duration: 3s;
 }
 
 .heading-projects {
@@ -134,9 +142,17 @@ header .e-mail {
 
 .exx {
     position: absolute;
+    object-fit: cover;
     top: 1020px;
     right: 465px;
-    
+    width: 305px;
+    height: 322px;
+}
+
+.slide {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .buttons {
@@ -212,4 +228,135 @@ header .e-mail {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     line-height: 20px;
+}
+
+
+.popup {
+    position: relative;
+    z-index: 2;
+    animation-name: visibility;
+    animation-duration: 2s;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    width: 388px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    gap: 15px;
+    padding: 10px 15px 15px;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.invisible {
+    display: none;
+}
+
+.blackout:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+  }
+
+.fa-window-close {
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    top: -1px;
+    color: brown;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.popup-head {
+    background-color: #FFBC33;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    
+    
+}
+ 
+label span {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+
+.call-to-action {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #308250;
+    border-top: 1px solid #308250;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.send-form {
+    display: block;
+    margin-top: 20px;
+    border: none;
+    background-color: #33FF82;
+    padding: 10px 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.number-question {
+    margin-top: 10px;
+}
+
+.email-question {
+    margin-top: 10px;
+}
+
+.popup input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background-color: rgb(120, 120, 120, 0.4);
+    border: none;
+}
+
+
+@keyframes visibility {
+    from {opacity: 0;}
+
+    to{opacity: 1;}
+}
+
+@keyframes slide {
+    from {
+        top: 1020px;
+        right: 465px;
+        opacity: 1;
+    }
+
+    to {
+        top: 1020px;
+        right: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes test {
+
+    to {
+        margin-left: 1000px;
+    }
 }

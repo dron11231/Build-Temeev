@@ -18,7 +18,7 @@
     <header>
         <div class="first-screen">
             <div class="logo">
-                <span>Всё<span class="logo-white">Строй</span></span>
+                <span class="all">Всё<span class="logo-white">Строй</span></span>
             </div>
             <nav>
                 <a href="#">Главная</a>
@@ -26,12 +26,29 @@
                 <a href="#">Решения</a>
                 <a href="#">Реализованные проекты</a>
                 <a href="#">Контакты</a>
-                <button>Подать заявку</button>
+                <button class="request" onclick="popupVisible()">Подать заявку</button>
             </nav>
             <div class="contacts-header">
                 <span class="number">+7 (xxx) xxx-xx-xx</span>
                 <span class="e-mail">mail@email.com</span>
             </div>
+        </div>
+        <div class="popup invisible">
+            <i class="far fa-window-close" onclick="popupInvisible()"></i>
+        <div class="popup-head">
+            <span class="all">Всё<span class="logo-white">Строй</span></span>
+        </div>
+            <span class="call-to-action">Оставьте свои контактные данные и <br>
+                мы свяжемся с вами</span>
+            <form autocomplete="on">
+                <label for="name"><span class="name-question">Как вас зовут?</span></label>
+                <input type="text" id="name">
+                <label for="tel-number"><span class="number-question">Ваш номер телефона:</span></label>
+                <input type="text" id="tel-number">
+                <label for="your-email"><span class="email-question">Ваш e-mail:</span></label>
+                <input type="email">
+                <button class="send-form" type="submit">Отправить</button>
+            </form>
         </div>
 </header>
 <main>
@@ -52,9 +69,9 @@
         </div>
         <div class="buttons">
         <i class="far fa-arrow-alt-circle-left"></i>
-        <i class="far fa-arrow-alt-circle-right"></i>
+        <i class="far fa-arrow-alt-circle-right" onclick="sliderHandler()"></i>
         </div>
-       <img class="exx" src="/img/blank.png" alt="">
+       <img class="exx" src="/img/avangard.jpg" alt="">
     </div>
     <div class="our-people">
         <div class="heading-people">
