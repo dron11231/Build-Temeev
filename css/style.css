@@ -100,10 +100,34 @@ header .e-mail {
     padding-top: 50px;
     padding-bottom: 150px;
     width: 865px;
+    height: 357px;
 }
 
+.slider {
+    display: flex;
+}
 
-.specification {
+.slide-to-right {
+    animation-name: slide-to-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slide-out-left {
+    animation-name: slide-out-from-left;
+    animation-duration: 1s;
+}
+
+.slide-2 {
+    position: absolute;
+    display: none;
+}
+
+.slide-1 {
+    position: absolute;
+}
+
+.specification span {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -114,9 +138,16 @@ header .e-mail {
     margin-left: 350px;
     position: relative;
     z-index: 1;
+    width: 331px;
+}
 
-    animation-name: test;
-    animation-duration: 3s;
+.exx {
+    margin-left: 710px;
+    margin-top: -250px;
+    object-fit: cover;
+    width: 305px;
+    height: 322px;
+    border-radius: 2px;
 }
 
 .heading-projects {
@@ -139,21 +170,6 @@ header .e-mail {
     margin-top: 20px;
 }
 
-
-.exx {
-    position: absolute;
-    object-fit: cover;
-    top: 1020px;
-    right: 465px;
-    width: 305px;
-    height: 322px;
-}
-
-.slide {
-    animation-name: slide;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
 
 .buttons {
     position: absolute;
@@ -340,23 +356,19 @@ label span {
     to{opacity: 1;}
 }
 
-@keyframes slide {
-    from {
-        top: 1020px;
-        right: 465px;
-        opacity: 1;
-    }
-
+@keyframes slide-to-right {
     to {
-        top: 1020px;
-        right: 0px;
+        margin-left: 500px;
         opacity: 0;
     }
 }
 
-@keyframes test {
-
-    to {
-        margin-left: 1000px;
+@keyframes slide-out-from-left {
+    from {
+        margin-left: -260px;
+        opacity: 0;
     }
+
+
+
 }
