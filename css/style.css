@@ -105,6 +105,7 @@ header .e-mail {
 
 .slider {
     display: flex;
+    
 }
 
 .slide-to-right {
@@ -118,10 +119,15 @@ header .e-mail {
     animation-duration: 1s;
 }
 
+.slide-3 {
+    display: none;
+} 
+
 .slide-2 {
     position: absolute;
-    display: none;
+    display: none; 
 }
+
 
 .slide-1 {
     position: absolute;
@@ -349,6 +355,32 @@ label span {
     border: none;
 }
 
+footer {
+    background-color: #323232;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+}
+
+.footer-info {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+footer span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #DCDCDC;
+    margin-top: 15px;
+}
 
 @keyframes visibility {
     from {opacity: 0;}
